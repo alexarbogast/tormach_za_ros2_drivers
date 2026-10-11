@@ -4,7 +4,7 @@
     <!-- URDF for *no* gripper: define grasp_link with no geometry &
          connect it at flange -->
 
-    <link name="grasp_link"/>
+    <link name="${prefix}grasp_link"/>
 
     <!-- joint list -->
     <joint name="${prefix}grasp_joint" type="fixed">

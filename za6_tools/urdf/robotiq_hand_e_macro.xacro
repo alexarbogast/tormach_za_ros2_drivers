@@ -87,10 +87,10 @@
     </joint>
 
     <!-- Attach grasp_link to gripper body for now -->
-    <link name="grasp_link" />
-    <joint name="grasp_joint" type="fixed">
+    <link name="${prefix}grasp_link" />
+    <joint name="${prefix}grasp_joint" type="fixed">
       <parent link="${prefix}hand_e_body" />
-      <child link="grasp_link" />
+      <child link="${prefix}grasp_link" />
       <origin xyz="0.0 0.0 0.135" rpy="0.0 0.0 0.0" />
     </joint>
 

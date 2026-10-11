@@ -137,10 +137,10 @@
     </joint>
 
     <!-- Attach grasp_link to gripper base for now -->
-    <link name="grasp_link" />
-    <joint name="grasp_joint" type="fixed">
-      <parent link="$(arg prefix)pivot_gripper_base" />
-      <child link="grasp_link" />
+    <link name="${prefix}grasp_link" />
+    <joint name="${prefix}grasp_joint" type="fixed">
+    <parent link="${prefix}pivot_gripper_base" />
+      <child link="${prefix}grasp_link" />
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
     </joint>
 
